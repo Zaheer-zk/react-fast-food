@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function CreateUser() {
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -13,12 +13,13 @@ function CreateUser() {
 
       <input
         type="text"
+        className="m-3 p-2"
         placeholder="Your full name"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
 
-      {username !== '' && (
+      {username !== "" && (
         <div>
           <button>Start ordering</button>
         </div>

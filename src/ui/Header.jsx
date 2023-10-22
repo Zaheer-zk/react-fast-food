@@ -5,8 +5,8 @@ import UserName from "../features/user/UserName";
 
 const Header = () => {
   return (
-    <div className="bg-yellow-500 font-semibold uppercase">
-      <Link className="tracking-[.4em]" to="/">
+    <div className=" flex items-center justify-between bg-yellow-500 p-4 font-semibold uppercase">
+      <Link className="p-1 text-2xl tracking-[.4em]" to="/">
         React Fast Food
       </Link>
       <SearchOrder />
